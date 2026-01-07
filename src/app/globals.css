@@ -10,6 +10,16 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* --- COLORS --- */
+  --color-primary: #0092FE;     
+  --color-primary-sub: #153B8F; 
+  --color-text-hero: #545382;   
+  --color-text-main: #171717;  
+
+  /* --- FONTS --- */
+  --font-inter: var(--font-inter), ui-sans-serif, system-ui;
+  --font-roboto: var(--font-roboto), sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
