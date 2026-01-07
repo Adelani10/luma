@@ -1,6 +1,7 @@
 import Navbar from "@/components/shared/navbar";
 import Hero from "@/components/shared/landingPage/hero";
 import FeatureSection from "@/components/shared/landingPage/featureSection";
+import Footer from "@/components/shared/footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           reverse
         /> */}
       </div>
+      <Footer />
     </main>
   );
 }
