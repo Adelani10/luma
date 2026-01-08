@@ -2,6 +2,9 @@ import Navbar from "@/components/shared/navbar";
 import Hero from "@/components/shared/landingPage/hero";
 import FeatureSection from "@/components/shared/landingPage/featureSection";
 import Footer from "@/components/shared/footer";
+import { LandingPageFeatureTilesProps } from "@/types";
+import { landingPageFeatureTiles } from "@/lib";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -10,18 +13,37 @@ export default function Home() {
         <Navbar />
         <Hero />
 
-        {/* <FeatureSection
-          title="Connection — made simple"
-          description="One simple way to message teachers, families, and staff—anytime, anywhere. Clear communication, instant updates, and automatic translation in more than 35 languages 🌎"
-          bgColor="bg-[#FFF9E5]" // Pale Yellow
-        /> */}
+        <section className="flex flex-col gap-6 mb-12">
+          {landingPageFeatureTiles.map((tile: LandingPageFeatureTilesProps) => (
+            <FeatureSection key={tile.id} {...tile} />
+          ))}
 
-        {/* <FeatureSection
-          title="Offer a window into their world"
-          description="With Stories, teachers can securely share photos, videos and updates on a private feed so parents can see the classroom magic for themselves ✨"
-          bgColor="bg-[#E5F6FF]" // Pale Blue
-          reverse
-        /> */}
+          <div className="bg-[#006BEE] p-8 w-full md:w-[50%] mx-auto grid place-items-center mt-6 gap-4 rounded-[64px]">
+            <Image
+              src={"/lumatribe-island.png"}
+              alt="luma island"
+              width={250}
+              height={40}
+              priority
+            />
+            <h4 className="font-bold text-white -mt-6 text-[42px]">
+              Walk the Journey with Us
+            </h4>
+            <p className="text-white text-[14px] text-center max-w-lg leading-snug">
+              LUMA Tribe is a partnership. Parents and teachers play unique,
+              powerful roles in shaping a child’s faith journey. We give you the
+              tools and guidance to disciple confidently
+            </p>
+            <div className="flex items-center gap-2 text-black">
+              <button className="bg-[#E8FEFE] font-semibold rounded-[50px] h-[56px] w-[226px]">
+                Parent Overview
+              </button>
+              <button className="bg-[#FFDF17] font-semibold rounded-[50px] h-[56px] w-[226px] ">
+                Teacher Resources
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
       <Footer />
     </main>

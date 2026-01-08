@@ -21,6 +21,14 @@ export interface FeatureProps {
   reverse?: boolean;
 }
 
+export interface LandingPageFeatureTilesProps {
+  id: number;
+  title: string;
+  description: string;
+  background: string;
+  icon: string;
+  image: string;
+}
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "outline" | "ghost" | "bold-blue";
