@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
         />
 
         <Link href="#">Resources</Link>
-        <Link href="#">Store</Link>
+        <Link href="/admin-dashboard/home">Store</Link>
       </div>
 
       <div className="flex items-center gap-4">

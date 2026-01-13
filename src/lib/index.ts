@@ -86,3 +86,11 @@ export const landingPageFeatureTiles: LandingPageFeatureTilesProps[] = [
     image: "/app-store.png",
   },
 ];
+
+
+export const studentsData = [
+  { id: 1, name: "Chris Friedkly", subtext: "John clerff", avatar: "/avatar.png" },
+  { id: 2, name: "Maggie Johnson", subtext: "Oasis Organic Inc.", avatar: "/avatar.png", selected: true },
+  { id: 3, name: "Gael Harry", subtext: "New York Finest Fruits", avatar: "/avatar.png" },
+  { id: 4, name: "Jenna Sullivan", subtext: "Walmart", avatar: "/avatar.png" },
+];

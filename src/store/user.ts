@@ -1,5 +1,5 @@
-import { create } from 'zustand'
-import { User } from '@/types'
+import { create } from "zustand";
+import { User } from "@/types";
 
 interface UserState {
   user: User | null;
@@ -9,4 +9,4 @@ interface UserState {
 export const useUserStore = create<UserState>((set) => ({
   user: null,
   setUser: (user) => set({ user }),
-}))
+}));

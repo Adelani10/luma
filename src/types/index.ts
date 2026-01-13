@@ -47,3 +47,41 @@ export interface StarRatingProps {
   editable?: boolean;
   onRatingChange?: (newRating: number) => void;
 }
+
+export interface StatCardProps {
+  title: string;
+  value: string | number;
+  href: string;
+  linkText: string; useAlt?: boolean
+}
+
+export interface QuickActionProps {
+  label: string;
+  onClick?: () => void;
+  variant?: "blue" | "gray";
+}
+
+export interface UserRowProps {
+  name: string;
+  subtext: string;
+  avatarUrl: string;
+  isSelected?: boolean;
+  isStudent?: boolean;
+}
+
+export interface UsersCompProps {
+  header: string;
+  footerTitle: string;
+}
+
+export interface ActionButtonProps {
+  isOpen: boolean;
+  onToggle: () => void;
+  pathname?: string;
+  options: option[];
+}
+
+export type option = {
+  label: string;
+  action: () => void;
+};

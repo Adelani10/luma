@@ -16,6 +16,7 @@
   --color-primary-sub: #153B8F; 
   --color-text-hero: #545382;   
   --color-text-main: #171717;  
+  --color-text-black: #131313;  
 
   /* --- FONTS --- */
   --font-inter: var(--font-inter), ui-sans-serif, system-ui;

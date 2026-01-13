@@ -31,7 +31,7 @@ export default function NavDropdown({ label, items }: NavDropdownProps) {
       </button>
 
       {isOpen && (
-        <div className="absolute left-0 mt-0 w-48 bg-white border border-gray-100 rounded-2xl shadow-xl py-2 z-50 animate-in fade-in zoom-in-95 duration-200">
+        <div className="absolute right-0 mt-0 w-48 bg-white border border-gray-100 rounded-2xl shadow-xl py-2 z-50 animate-in fade-in zoom-in-95 duration-200">
           {items.map((item, idx) => (
             <a
               key={idx}
