@@ -87,10 +87,39 @@ export const landingPageFeatureTiles: LandingPageFeatureTilesProps[] = [
   },
 ];
 
-
 export const studentsData = [
-  { id: 1, name: "Chris Friedkly", subtext: "John clerff", avatar: "/avatar.png" },
-  { id: 2, name: "Maggie Johnson", subtext: "Oasis Organic Inc.", avatar: "/avatar.png", selected: true },
-  { id: 3, name: "Gael Harry", subtext: "New York Finest Fruits", avatar: "/avatar.png" },
+  {
+    id: 1,
+    name: "Chris Friedkly",
+    subtext: "John clerff",
+    avatar: "/avatar.png",
+  },
+  {
+    id: 2,
+    name: "Maggie Johnson",
+    subtext: "Oasis Organic Inc.",
+    avatar: "/avatar.png",
+  },
+  {
+    id: 3,
+    name: "Gael Harry",
+    subtext: "New York Finest Fruits",
+    avatar: "/avatar.png",
+  },
   { id: 4, name: "Jenna Sullivan", subtext: "Walmart", avatar: "/avatar.png" },
+];
+
+export const courseData = [
+  {
+    id: 1,
+    name: "Geometry around us",
+    section: "Toddler",
+    avatar: "/images/course-avatars/geometry.png",
+  },
+  {
+    id: 2,
+    name: "Space and earth",
+    section: "Preschool",
+    avatar: "/images/course-avatars/earth.png",
+  }
 ];

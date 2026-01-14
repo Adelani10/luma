@@ -68,6 +68,11 @@ export interface UserRowProps {
   isSelected?: boolean;
   isStudent?: boolean;
 }
+export interface CourseRowProps {
+  name: string;
+  section: string;
+  avatarUrl: string;
+}
 
 export interface UsersCompProps {
   header: string;
@@ -85,3 +90,22 @@ export type option = {
   label: string;
   action: () => void;
 };
+
+export interface Step {
+  id: number;
+  label: string;
+}
+
+export interface StepIndicatorProps {
+  steps: Step[];
+  currentStep: number;
+}
+
+export interface CreateCourseHeaderProps {
+  currentStep: number;
+}
+
+export interface FormFieldProps {
+  label: string;
+  children: React.ReactNode;
+}

@@ -35,7 +35,6 @@ const Users: React.FC<UsersCompProps> = ({ header, footerTitle }) => {
               name={student.name}
               subtext={student.subtext}
               avatarUrl={student.avatar}
-              isSelected={student.selected}
             />
           ))}
         </div>

@@ -1,7 +1,6 @@
 import Navbar from "@/components/shared/navbar";
 import Hero from "@/components/shared/landingPage/hero";
 import FeatureSection from "@/components/shared/landingPage/featureSection";
-import Footer from "@/components/shared/footer";
 import { LandingPageFeatureTilesProps } from "@/types";
 import { landingPageFeatureTiles } from "@/lib";
 import Image from "next/image";
@@ -13,12 +12,12 @@ export default function Home() {
         <Navbar />
         <Hero />
 
-        <section className="flex flex-col gap-6 mb-12">
+        <section className="flex flex-col gap-6 ">
           {landingPageFeatureTiles.map((tile: LandingPageFeatureTilesProps) => (
             <FeatureSection key={tile.id} {...tile} />
           ))}
 
-          <div className="bg-[#006BEE] p-8 w-full md:w-[50%] mx-auto grid place-items-center mt-6 gap-4 rounded-[64px]">
+          <div className="bg-[#006BEE] p-8 w-full md:w-[50%] mx-auto grid place-items-center my-6 gap-4 rounded-[64px]">
             <Image
               src={"/lumatribe-island.png"}
               alt="luma island"
@@ -29,7 +28,7 @@ export default function Home() {
             <h4 className="font-bold text-white -mt-6 text-[42px]">
               Walk the Journey with Us
             </h4>
-            <p className="text-white text-[14px] text-center max-w-lg leading-snug">
+            <p className="text-white text-[14px] text-center max-w-lg mb-12 leading-snug">
               LUMA Tribe is a partnership. Parents and teachers play unique,
               powerful roles in shaping a child’s faith journey. We give you the
               tools and guidance to disciple confidently
