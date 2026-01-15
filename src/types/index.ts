@@ -109,3 +109,17 @@ export interface FormFieldProps {
   label: string;
   children: React.ReactNode;
 }
+
+export interface ThumbnailUploadProps {
+  onUpload: (file: File) => void;
+}
+
+export interface DocumentUploadProps {
+  onUpload: (file: File) => void;
+  fileName?: string;
+}
+
+
+export interface LessonCardProps {
+  index: number;
+}

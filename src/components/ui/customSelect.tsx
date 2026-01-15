@@ -11,7 +11,7 @@ const CustomSelect: React.FC<SelectProps> = ({ children, ...props }) => (
   <div className="relative">
     <select
       className="
-        w-full px-4 py-3 rounded-2xl border border-gray-200 text-gray-400
+        w-full px-4 py-3 rounded-2xl border border-gray-200 text-text-main
         bg-white outline-none appearance-none transition-all
         focus:border-primary
       "
